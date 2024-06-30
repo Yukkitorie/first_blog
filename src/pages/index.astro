@@ -1,0 +1,28 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Помогите, я схожу с ума</h1>
+			<p>
+				Если честно это спизженный ассет из астро для блога
+			</p>
+			<p>
+				Я буду использовать его для того что бы учится использовать JS и библеотеки для него
+			</p>
+			<p>Надеюсь я не ебнусь</p>
+			<ul>
+		</main>
+		<Footer />
+	</body>
+</html>
