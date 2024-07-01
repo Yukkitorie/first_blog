@@ -1,7 +1,7 @@
 ---
 title: 'First post'
 description: 'пук, мук'
-pubDate: 'Jul 08 2022'
+pubDate: 'June 30 2024'
 heroImage: '/blog-placeholder-3.jpg'
 ---
 
