@@ -1,19 +1,30 @@
----
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
----
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Header with SVG Logo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 <header>
-	<nav>
-		<div>
-		<h2><a href="/">Yukkitorie Blog</a></h2>
-		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
-		</div>
-	</nav>
+    <nav>
+        <img src="testlogo.svg" alt="Logo" width="150" height="auto">
+    <ul>
+        <li><a href="http://localhost:4321">Home</a></li>
+        <li><a href="/courses">Courses</a></li>
+        <li><a href="/questions">Questions</a></li>
+        <li><a href="/tags">Tags</a></li>
+        <li><a href="/users">Users</a></li>
+    </ul>
+    <div class="auth-buttons">
+        <button>Login</button>
+        <button>Register</button>
+    </div>
+    </nav>
 </header>
+</body>
+</html>
 
 <style>
 	header {
@@ -22,37 +33,10 @@ import { SITE_TITLE } from '../consts';
 		background: white;
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
 	}
-	h2 {
-		margin: 0;
-		font-size: 1em;
-	}
-
-	h2 a,
-	h2 a.active {
-		text-decoration: none;
-	}
 	nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
-	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
-	}
-	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
-	}
-	.social-links,
-	.social-links a {
-		display: flex;
-	}
-	@media (max-width: 720px) {
-		.social-links {
-			display: none;
-		}
-	}
+
 </style>
